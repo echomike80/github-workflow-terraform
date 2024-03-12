@@ -37,7 +37,7 @@ jobs:
       - name: Terraform init
         working-directory: ./
         id: init
-        run: terraform init -backend-config=backends/backend_dev2.tf
+        run: terraform init -backend-config="bucket=example-dev-20231208-tfstate"
 
 #     - name: Terraform format
 #       id: fmt
